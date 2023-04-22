@@ -287,7 +287,7 @@ export class SecurityConfigTypes {
      */
     enable: t.boolean,
     /**
-     * An array of control names to be enabled for the given security standards
+     * An array of control names to be disabled for the given security standards
      */
     controlsToDisable: t.optional(t.array(t.nonEmptyString)),
   });
@@ -946,7 +946,7 @@ export class SecurityHubStandardConfig implements t.TypeOf<typeof SecurityConfig
    */
   readonly enable = true;
   /**
-   * An array of control names to be enabled for the given security standards
+   * An array of control names to be disabled for the given security standards
    */
   readonly controlsToDisable: string[] = [];
 }
