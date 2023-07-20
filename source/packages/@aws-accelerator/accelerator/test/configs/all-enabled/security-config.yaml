@@ -135,6 +135,7 @@ iamPasswordPolicy:
 awsConfig:
   enableConfigurationRecorder: true
   enableDeliveryChannel: true
+  useSeparateBucket: true
   ruleSets:
     - deploymentTargets:
         organizationalUnits:
