@@ -1239,7 +1239,6 @@ export class LoggingStack extends AcceleratorStack {
         kmsKey: this.cloudwatchKey,
         logRetentionInDays: this.props.globalConfig.cloudwatchLogRetentionInDays,
       };
-
       this.centralLogsBucket = new CentralLogsBucket(this, 'CentralLogsBucket', {
         s3BucketName: this.centralLogsBucketName,
         serverAccessLogsBucket: serverAccessLogsBucket,
